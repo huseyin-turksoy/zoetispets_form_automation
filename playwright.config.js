@@ -17,7 +17,7 @@ const config = {
 
     browserName: 'firefox',
     viewport: { width: 1280, height: 720 },
-    headless: false,
+    headless: true,
     ignoreHTTPSErrors: true,
     video: 'only-on-failure',
     screenshot: 'only-on-failure',

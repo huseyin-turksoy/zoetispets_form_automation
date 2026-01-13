@@ -17,7 +17,7 @@ urls.forEach((url) => {
     test('filling the cat arthritis form for ' + url, async ({ page }) => {
 
   await page.goto(url);
-  await page.waitForLoadState('networkidle');
+  //await page.waitForLoadState('networkidle');
 
   const cookieBtn = page.locator('button[id="onetrust-accept-btn-handler"]');
 

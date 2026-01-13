@@ -64,6 +64,6 @@ jobs:
           content_type: text/html
           body: |
             <h2>Some Playwright tests have failed</h2>
-            <p>${{ steps.failures.outputs.report }}</p>
+            <p>Playwright tests failed — the full HTML report is published to GitHub Pages.</p>
             <p>📑 <a href="https://huseyin-turksoy.github.io/zoetispets_form_automation/">View Full Report</a></p>
           # test  commands 

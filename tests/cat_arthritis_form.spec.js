@@ -54,7 +54,8 @@ urls.forEach((url) => {
   await page.locator('[for="consent1"]').click();
   await page.locator('span[class="checkmark"]').nth(5).click();
   await page.locator('[type="submit"]').click();
-  expect(await page.locator('[class="assessment__result-item"]').first()).toBeVisible();
+  await expect(page.locator('picture').first()).toBeVisible();
+  await expect(page.locator('picture').nth(1)).toBeVisible();
   await console.log('Cat Arthritis Form submitted successfully and results are visible for = ${url}');  
   //hello
 

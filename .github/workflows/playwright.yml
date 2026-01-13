@@ -55,14 +55,13 @@ jobs:
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: ${{ secrets.SMTP_SERVER }}
-          server_port: ${{ secrets.SMTP_PORT }}
+          server_port: 587
           username: ${{ secrets.SMTP_USERNAME }}
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: "🚨 Playwright Test Failure - Zoetis Pets Forms"
           to: ${{ secrets.CLIENT_EMAILS }}
           from: ${{ secrets.SMTP_USERNAME }}
-          content_type: text/html
-          body: |
+          html_body: |
             <h2>Some Playwright tests have failed</h2>
             <p>Playwright tests failed — the full HTML report is published to GitHub Pages.</p>
             <p>📑 <a href="https://huseyin-turksoy.github.io/zoetispets_form_automation/">View Full Report</a></p>

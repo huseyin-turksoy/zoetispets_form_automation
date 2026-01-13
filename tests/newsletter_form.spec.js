@@ -37,7 +37,7 @@ test('test', async ({ page }) => {
   await page.locator('.checkbox-container > .checkmark').first().click();
   await page.locator('div:nth-child(8) > astro-checkbox > .checkbox-wrapper > .checkbox-container > .checkmark').click();
   await page.getByRole('button', { name: 'Submit' }).click();
-  expect(await page.getByRole('heading', { name: 'You’ve successfully joined' }).isVisible).toBeTruthy();
+  expect(await page.getByRole('heading', { name: 'You’ve successfully joined' }).isVisible()).toBeTruthy();
 
 
 });

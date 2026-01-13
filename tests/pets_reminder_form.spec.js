@@ -35,5 +35,5 @@ test('filling the pets reminder form', async ({ page }) => {
   await page.locator('.checkmark').first().click();
   await page.locator('astro-checkbox:nth-child(5) > .checkbox-wrapper > .checkbox-container > .checkmark').click();
   await page.getByRole('button', { name: 'Set Up Medication Reminder' }).click();
-  expect(await page.getByRole('heading', { name: 'Thank you for setting up your' }).isVisible).toBeTruthy();
+  expect(await page.getByRole('heading', { name: 'Thank you for setting up your' }).isVisible()).toBeTruthy();
 });

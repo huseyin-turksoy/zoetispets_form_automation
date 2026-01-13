@@ -54,15 +54,15 @@ jobs:
         if: failure()
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: ${{ secrets.SMTP_SERVER }}
+          server_address: smtp.office365.com
           server_port: 587
-          username: ${{ secrets.SMTP_USERNAME }}
-          password: ${{ secrets.SMTP_PASSWORD }}
+          username: test.engineer@nmqdigital.com
+          password: 7m5tBzO1M06oXV7hL
           subject: "🚨 Playwright Test Failure - Zoetis Pets Forms"
-          to: ${{ secrets.CLIENT_EMAILS }}
-          from: ${{ secrets.SMTP_USERNAME }}
+          to: huseyin.turksoy@nmqdigital.com
+          from: test.engineer@nmqdigital.com
           html_body: |
             <h2>Some Playwright tests have failed</h2>
             <p>Playwright tests failed — the full HTML report is published to GitHub Pages.</p>
             <p>📑 <a href="https://huseyin-turksoy.github.io/zoetispets_form_automation/">View Full Report</a></p>
-          # test  commands 
+          

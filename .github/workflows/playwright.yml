@@ -65,4 +65,4 @@ jobs:
           body: |
             <h2>Some Playwright tests have failed</h2>
             <p>${{ steps.failures.outputs.report }}</p>
-            <p>📑 <a href="https://huseyinturksoy.github.io/zoetispetscheck/">View Full Report</a></p>
+            <p>📑 <a href="https://huseyin-turksoy.github.io/zoetispets_form_automation/">View Full Report</a></p>

@@ -42,7 +42,7 @@
                 - img [ref=e54]
               - generic [ref=e58]: Probleme beim Springen
             - generic [ref=e59] [cursor=pointer]:
-              - checkbox "Zurückbleiben beim Spaziergang" [ref=e60]
+              - checkbox "Zurückbleiben beim Spaziergang" [checked] [ref=e60]
               - generic [ref=e61]:
                 - img [ref=e62]
                 - img [ref=e65]
@@ -117,70 +117,57 @@
                 - img [ref=e190]
               - generic [ref=e193]: Keine der oben genannten
         - generic [ref=e195]:
-          - button "button label" [disabled]:
+          - button "button label" [ref=e196] [cursor=pointer]:
             - text: Zum Testergebnis
-            - generic:
-              - img
-              - img
+            - generic [ref=e197]:
+              - img [ref=e198]
+              - img [ref=e200]
           - paragraph
-        - paragraph [ref=e199]:
+        - paragraph [ref=e205]:
           - text: Erkennen Sie die oben genannten Anzeichen für eine
-          - strong [ref=e200]: Hunde-Arthrose
+          - strong [ref=e206]: Hunde-Arthrose
           - text: bei Ihrem eigenen Hund? Wenn Ihr Hund
-          - strong [ref=e201]: langsamer geht, weniger aktiv
+          - strong [ref=e207]: langsamer geht, weniger aktiv
           - text: ist oder Anzeichen von
-          - strong [ref=e202]: Gelenkschmerzen
+          - strong [ref=e208]: Gelenkschmerzen
           - text: oder
-          - strong [ref=e203]: Steifheit
+          - strong [ref=e209]: Steifheit
           - text: zeigt, könnte dies auf eine
-          - strong [ref=e204]: Hunde-Arthrose
+          - strong [ref=e210]: Hunde-Arthrose
           - text: zurückzuführen sein. Füllen Sie die oben stehende Beurteilung aus, um einen personalisierten Bericht zur
-          - strong [ref=e205]: Gelenkgesundheit Ihres Hundes
+          - strong [ref=e211]: Gelenkgesundheit Ihres Hundes
           - text: zu erhalten, oder vereinbaren Sie einen Termin bei Ihrem Tierarzt, um den nächsten Schritt in Richtung Linderung zu gehen.
-  - contentinfo [ref=e206]:
-    - generic [ref=e207]:
-      - img "Zoetis-Logo in Weiß" [ref=e209]
-      - generic [ref=e210]:
-        - generic [ref=e212]: Zoetis erforscht, entwickelt und vertreibt ein breit gefächertes Portfolio an Arzneimitteln und Impfstoffen für die Tiergesundheit, die auf die realen Bedürfnisse von Tierärzt*innen und den von ihnen unterstützten Nutztierhalter*innen und Tierhalter*innen zugeschnitten sind.
-        - list [ref=e213]:
-          - listitem [ref=e214]:
-            - link "Zoetis Unternehmenswebsite" [ref=e215] [cursor=pointer]:
-              - /url: https://www2.zoetis.de/
-          - listitem [ref=e216]:
-            - link "Datenschutzrichtlinie" [ref=e217] [cursor=pointer]:
-              - /url: /de-de/datenschutz/
-          - listitem [ref=e218]:
-            - link "Nutzungsbedingungen" [ref=e219] [cursor=pointer]:
-              - /url: /de-de/nutzungsbedingungen/
+  - contentinfo [ref=e212]:
+    - generic [ref=e213]:
+      - img "Zoetis-Logo in Weiß" [ref=e215]
+      - generic [ref=e216]:
+        - generic [ref=e218]: Zoetis erforscht, entwickelt und vertreibt ein breit gefächertes Portfolio an Arzneimitteln und Impfstoffen für die Tiergesundheit, die auf die realen Bedürfnisse von Tierärzt*innen und den von ihnen unterstützten Nutztierhalter*innen und Tierhalter*innen zugeschnitten sind.
+        - list [ref=e219]:
           - listitem [ref=e220]:
-            - link "Cookie-Einstellungen" [ref=e221] [cursor=pointer]:
+            - link "Zoetis Unternehmenswebsite" [ref=e221] [cursor=pointer]:
+              - /url: https://www2.zoetis.de/
+          - listitem [ref=e222]:
+            - link "Datenschutzrichtlinie" [ref=e223] [cursor=pointer]:
+              - /url: /de-de/datenschutz/
+          - listitem [ref=e224]:
+            - link "Nutzungsbedingungen" [ref=e225] [cursor=pointer]:
+              - /url: /de-de/nutzungsbedingungen/
+          - listitem [ref=e226]:
+            - link "Cookie-Einstellungen" [ref=e227] [cursor=pointer]:
               - /url: javascript:void(0)
-      - generic [ref=e224]:
-        - generic [ref=e225]: © Copyright 2025. Alle Marken sind Eigentum der Zoetis Inc., verbundener Unternehmen und/oder ihrer Lizenzgeber. Alle anderen Marken sind Eigentum der jeweiligen Inhaber.
-        - generic [ref=e226]: MM-18122
-  - dialog [ref=e228]:
-    - generic [ref=e229]:
-      - button "Close popup" [ref=e230] [cursor=pointer]:
-        - img
-        - text: ×
-      - generic [ref=e231]:
-        - generic [ref=e232]:
-          - img [ref=e234]
-          - heading "You are visiting Zoetis Pets Germany" [level=3] [ref=e236]
-        - paragraph [ref=e238]: For a better experience, we recommend switching to your local site. Localized content is available for your region.
-        - generic [ref=e239]: What would you like to do?
+      - generic [ref=e230]:
+        - generic [ref=e231]: © Copyright 2025. Alle Marken sind Eigentum der Zoetis Inc., verbundener Unternehmen und/oder ihrer Lizenzgeber. Alle anderen Marken sind Eigentum der jeweiligen Inhaber.
+        - generic [ref=e232]: MM-18122
+  - text: ×
+  - region "Cookie-Banner" [ref=e234]:
+    - dialog "Datenschutz" [ref=e235]:
+      - generic [ref=e237]:
         - generic [ref=e240]:
-          - button "Go to U.S. site" [ref=e241] [cursor=pointer]
-          - button "Stay on this site" [ref=e242] [cursor=pointer]
-  - region "Cookie-Banner" [ref=e244]:
-    - dialog "Datenschutz" [ref=e245]:
-      - generic [ref=e247]:
-        - generic [ref=e250]:
           - text: Wir verwenden Cookies, um zu verstehen, wie Sie unsere Website nutzen, um ihre Funktionalität zu optimieren, ein wertvolleres Erlebnis für Sie zu schaffen, unsere Website sicher und funktionsfähig zu halten und Inhalte bereitzustellen, die auf Ihre Interessen zugeschnitten sind. Wenn Sie auf „Akzeptieren“ klicken, erklären Sie sich mit der Verwendung von Cookies. Um weitere Informationen zu Cookies zu erhalten oder Ihre Präferenzen jederzeit zu ändern, klicken Sie auf die Schaltfläche „Cookie-Einstellungen“. Weitere Informationen zu diesen Technologien finden Sie in unserer
-          - link "Datenschutzerklärung" [active] [ref=e251] [cursor=pointer]:
+          - link "Datenschutzerklärung" [active] [ref=e241] [cursor=pointer]:
             - /url: https://www.zoetispets.com/de-de/datenschutz
-        - generic [ref=e253]:
-          - button "Akzeptieren" [ref=e254] [cursor=pointer]
-          - button "Ablehnen" [ref=e255] [cursor=pointer]
-          - button "Cookie-Einstellungen, Öffnet das Einstellungscenter-Dialogfeld" [ref=e256] [cursor=pointer]: Cookie-Einstellungen
+        - generic [ref=e243]:
+          - button "Akzeptieren" [ref=e244] [cursor=pointer]
+          - button "Ablehnen" [ref=e245] [cursor=pointer]
+          - button "Cookie-Einstellungen, Öffnet das Einstellungscenter-Dialogfeld" [ref=e246] [cursor=pointer]: Cookie-Einstellungen
 ```

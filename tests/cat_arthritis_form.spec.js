@@ -17,7 +17,7 @@ urls.forEach((url) => {
     test('filling the cat arthritis form for ' + url, async ({ page }) => {
 
   await page.goto(url);
-  await page.waitForLoadState('networkidle');
+  //await page.waitForLoadState('networkidle');
 
   const cookieBtn = page.locator('button[id="onetrust-accept-btn-handler"]');
 
@@ -56,6 +56,7 @@ urls.forEach((url) => {
   await page.locator('[type="submit"]').click();
   expect(await page.locator('[class="assessment__result-item"]').first()).toBeVisible();
   await console.log('Cat Arthritis Form submitted successfully and results are visible for = ${url}');  
+  //hello
 
 
 });

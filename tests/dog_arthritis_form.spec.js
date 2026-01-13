@@ -14,7 +14,7 @@ const urls = [
 
 urls.forEach((url) => {
 
-    test.only('filling the dog arthritis form for ' + url, async ({ page }) => {
+    test('filling the dog arthritis form for ' + url, async ({ page }) => {
 
   await page.goto(url);
   await page.waitForLoadState('networkidle');

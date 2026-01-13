@@ -57,7 +57,7 @@ jobs:
           server_address: smtp.office365.com
           server_port: 587
           username: test.engineer@nmqdigital.com
-          password: 7m5tBzO1M06oXV7hL
+          password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "🚨 Playwright Test Failure - Zoetis Pets Forms"
           to: huseyin.turksoy@nmqdigital.com
           from: test.engineer@nmqdigital.com

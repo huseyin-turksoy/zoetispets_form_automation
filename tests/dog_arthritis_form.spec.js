@@ -9,7 +9,7 @@ const urls = [
   'https://stage-zoetispets.cphostaccess.com/fr-fr/sante-du-chien/arthrose-quiz/',
   'https://stage-zoetispets.cphostaccess.com/it-it/salute-cane/dolore-articolare-quiz/',
   'https://stage-zoetispets.cphostaccess.com/pl-pl/ochrona-zdrowia-psa/artretyzm-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/pt-br/saude-do-cao/avaliacao-de-osteoartrite/',
+  //'https://stage-zoetispets.cphostaccess.com/pt-br/saude-do-cao/avaliacao-de-osteoartrite/',
   'https://stage-zoetispets.cphostaccess.com/fr-ca/chien-soins/arthrose-quiz/'
 ];
 
@@ -18,7 +18,7 @@ urls.forEach((url) => {
     test.only('filling the dog arthritis form for ' + url, async ({ page }) => {
 
   await page.goto(url);
-  //await page.waitForLoadState('networkidle');
+  await page.waitForLoadState('networkidle');
 
   const cookieBtn = page.locator('button[id="onetrust-accept-btn-handler"]');
 

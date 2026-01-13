@@ -15,7 +15,7 @@ const config = {
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
 
-    browserName: 'chromium',
+    browserName: 'firefox',
     viewport: { width: 1280, height: 720 },
     headless: true,
     ignoreHTTPSErrors: true,

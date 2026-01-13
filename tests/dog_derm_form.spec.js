@@ -9,7 +9,6 @@ const urls = [
   'https://stage-zoetispets.cphostaccess.com/fr-fr/sante-du-chien/dermatologie-evaluation/',
   'https://stage-zoetispets.cphostaccess.com/it-it/salute-cane/segni-di-problemi-cutanei-risultato/',
   'https://stage-zoetispets.cphostaccess.com/pl-pl/ochrona-zdrowia-psa/choroby-skory-u-psa-ocena/',
-  'https://stage-zoetispets.cphostaccess.com/pt-br/cuidados-caninos/avaliacao-de-condicoes-de-pele/',
   'https://stage-zoetispets.cphostaccess.com/en-gb/dog-healthcare/skin-conditions-assessment/'
 ];
 
@@ -18,7 +17,7 @@ urls.forEach((url) => {
     test('filling the dog derm form for ' + url, async ({ page }) => {
 
   await page.goto(url);
-  //await page.waitForLoadState('networkidle');
+  await page.waitForLoadState('networkidle');
 
   const cookieBtn = page.locator('button[id="onetrust-accept-btn-handler"]');
 

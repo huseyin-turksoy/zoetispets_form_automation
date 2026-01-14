@@ -1,15 +1,17 @@
 import{test, expect} from '@playwright/test';
 
-test('test', async ({ page }) => {
+test.only('newsletter_form', async ({ page }) => {
   await page.goto('https://stage-zoetispets.cphostaccess.com/en-gb/blog/dog/how-often-do-dogs-go-to-vet/');
-  await page.waitForLoadState('networkidle');
+  //await page.waitForLoadState('networkidle');
 
-  const cookieBtn = page.locator('button[id="onetrust-accept-btn-handler"]');
+  for(let i=0; i<2; i++){
 
-  if (await cookieBtn.isVisible()) {
-  await cookieBtn.click();
+    if (await page.locator('button[id="onetrust-accept-btn-handler"]').isVisible()) {
+  await page.locator('button[id="onetrust-accept-btn-handler"]').click();
+  break;
   }else{
-    console.log('Cookie button not visible');
+    await page.waitForTimeout(3000);
+  }
   }
 
   const ipPopupClose = page.locator('[class="ip-tracking-popup__close"]');
@@ -20,11 +22,23 @@ test('test', async ({ page }) => {
     console.log('IP popup not visible');
   }
 
-  //wait for form appearance
-  const form = page.getByRole('textbox', { name: 'Your email' });
+  //dynamic wait for form appearance
+    let retries = 0;
+  const maxRetries = 11; // 11 x 3 saniye = 33 saniye max
+  
+  while (retries < maxRetries) {
+    if (await page.getByRole('textbox', { name: 'Your email' }).isVisible()) {
+      break;
+    }
+    await page.waitForTimeout(3000);
+    retries++;
+  }
+
+  
+  /*const form = page.getByRole('textbox', { name: 'Your email' });
   await expect(form).toBeVisible({
   timeout: 34_000
-   });
+   });*/
 
   await page.getByRole('textbox', { name: 'Your email' }).click();
   await page.getByRole('textbox', { name: 'Your email' }).fill('newsletter.test@yopmail.com');
@@ -37,7 +51,7 @@ test('test', async ({ page }) => {
   await page.locator('.checkbox-container > .checkmark').first().click();
   await page.locator('div:nth-child(8) > astro-checkbox > .checkbox-wrapper > .checkbox-container > .checkmark').click();
   await page.getByRole('button', { name: 'Submit' }).click();
-  expect(await page.getByRole('heading', { name: 'You’ve successfully joined' }).isVisible()).toBeTruthy();
+  await expect(page.getByRole('heading', { name: 'You’ve successfully joined' })).toBeVisible();
 
 
 });

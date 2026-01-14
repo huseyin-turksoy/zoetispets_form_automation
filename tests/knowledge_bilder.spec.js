@@ -1,15 +1,18 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('knowledge_builder_form', async ({ page }) => {
   await page.goto('https://stage-zoetispets.cphostaccess.com/en-gb/dog-healthcare/arthritis/knowledge-builder/');
-  await page.waitForLoadState('networkidle');
+  //await page.waitForLoadState('networkidle');
 
-  const cookieBtn = page.locator('button[id="onetrust-accept-btn-handler"]');
+  for(let i=0; i<2; i++){
 
-  if (await cookieBtn.isVisible()) {
-  await cookieBtn.click();
+    if (await page.locator('button[id="onetrust-accept-btn-handler"]').isVisible()) {
+  await page.locator('button[id="onetrust-accept-btn-handler"]').click();
+  break;
   }else{
-    console.log('Cookie button not visible');
+    await page.waitForTimeout(3000);
+  }
+
   }
 
 

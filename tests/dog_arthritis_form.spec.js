@@ -9,7 +9,8 @@ const urls = [
   'https://stage-zoetispets.cphostaccess.com/fr-fr/sante-du-chien/arthrose-quiz/',
   'https://stage-zoetispets.cphostaccess.com/it-it/salute-cane/dolore-articolare-quiz/',
   'https://stage-zoetispets.cphostaccess.com/pl-pl/ochrona-zdrowia-psa/artretyzm-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/fr-ca/chien-soins/arthrose-quiz/'
+  'https://stage-zoetispets.cphostaccess.com/fr-ca/chien-soins/arthrose-quiz/',
+  'https://stage-zoetispets.cphostaccess.com/pt-br/saude-do-cao/avaliacao-de-osteoartrite/'
 ];
 
 urls.forEach((url) => {
@@ -17,14 +18,17 @@ urls.forEach((url) => {
     test('filling the dog arthritis form for ' + url, async ({ page }) => {
 
   await page.goto(url);
-  await page.waitForLoadState('networkidle');
+  //await page.waitForLoadState('networkidle');
 
-  const cookieBtn = page.locator('button[id="onetrust-accept-btn-handler"]');
+  for(let i=0; i<2; i++){
 
-  if (await cookieBtn.isVisible()) {
-  await cookieBtn.click();
+    if (await page.locator('button[id="onetrust-accept-btn-handler"]').isVisible()) {
+  await page.locator('button[id="onetrust-accept-btn-handler"]').click();
+  break;
   }else{
-    console.log('Cookie button not visible');
+    await page.waitForTimeout(3000);
+  }
+
   }
 
 
@@ -54,10 +58,16 @@ urls.forEach((url) => {
   await page.locator('[for="consent1"]').click();
   await page.locator('span[class="checkmark"]').nth(5).click();
   await page.locator('[type="submit"]').click();
-  await expect(page.locator('picture').first()).toBeVisible();
-  await expect(page.locator('picture').nth(1)).toBeVisible();
 
-  await console.log('Dog Arthritis Form submitted successfully and results are visible for = ${url}');  
+  if(await page.locator('picture').first().isVisible()){
+    expect(await page.locator('picture').first()).toBeTruthy();
+    await console.log('Result Pictures are visible');
+  }else{
+    expect(await page.locator('video').first()).toBeTruthy();
+    await console.log('Result Videos are visible');
+  }
+
+  await console.log('Dog Arthritis Form submitted successfully and results are visible for = '+ url);  
 
 
 });

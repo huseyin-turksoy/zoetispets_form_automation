@@ -3,14 +3,17 @@ import{test, expect} from '@playwright/test';
 
 test('filling the pets reminder form', async ({ page }) => {
   await page.goto('https://stage-zoetispets.cphostaccess.com/en-gb/prescriptions/apoquel/');
-  await page.waitForLoadState('networkidle');
+  //await page.waitForLoadState('networkidle');
 
-  const cookieBtn = page.locator('button[id="onetrust-accept-btn-handler"]');
+  for(let i=0; i<2; i++){
 
-  if (await cookieBtn.isVisible()) {
-  await cookieBtn.click();
+    if (await page.locator('button[id="onetrust-accept-btn-handler"]').isVisible()) {
+  await page.locator('button[id="onetrust-accept-btn-handler"]').click();
+  break;
   }else{
-    console.log('Cookie button not visible');
+    await page.waitForTimeout(3000);
+  }
+
   }
 
   await page.getByRole('button', { name: 'Yes, I have an Apoquel' }).click();
@@ -34,6 +37,6 @@ test('filling the pets reminder form', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Last Administration Date*' }).fill('2026-01-05');
   await page.locator('.checkmark').first().click();
   await page.locator('astro-checkbox:nth-child(5) > .checkbox-wrapper > .checkbox-container > .checkmark').click();
-  await page.getByRole('button', { name: 'Set Up Medication Reminder' }).click();
-  expect(await page.getByRole('heading', { name: 'Thank you for setting up your' }).isVisible()).toBeTruthy();
+  await page.locator('.medication-reminder__button').click();
+  await expect(page.getByRole('heading', { name: 'Thank you for setting up your' })).toBeVisible();
 });

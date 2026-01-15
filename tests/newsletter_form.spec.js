@@ -1,6 +1,6 @@
 import{test, expect} from '@playwright/test';
 
-test.only('newsletter_form', async ({ page }) => {
+test('newsletter_form', async ({ page }) => {
   await page.goto('https://stage-zoetispets.cphostaccess.com/en-gb/blog/dog/how-often-do-dogs-go-to-vet/');
   //await page.waitForLoadState('networkidle');
 

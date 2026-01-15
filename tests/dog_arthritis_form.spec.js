@@ -55,7 +55,7 @@ urls.forEach((url) => {
   await page.locator('[class="dropdown-trigger"]').first().click();
   await page.locator('li[class="dropdown-item select-option"]').first().click();
   await page.locator('#email_select').first().fill('test.dog@yopmail.com');
-  await page.locator('[for="consent1"]').click();
+  await page.locator('span[class="checkmark"]').nth(4).click();
   await page.locator('span[class="checkmark"]').nth(5).click();
   await page.locator('[type="submit"]').click();
 

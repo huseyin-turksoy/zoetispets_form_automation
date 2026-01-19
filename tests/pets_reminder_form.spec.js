@@ -3,7 +3,7 @@ import{test, expect} from '@playwright/test';
 const url = 'https://stage-zoetispets.cphostaccess.com/en-gb/prescriptions/apoquel/';
 
 
-test.only('filling the pets reminder form '+ url, async ({ page }) => {
+test('filling the pets reminder form '+ url, async ({ page }) => {
   await page.goto(url);
   //await page.waitForLoadState('networkidle');
 
@@ -40,5 +40,5 @@ test.only('filling the pets reminder form '+ url, async ({ page }) => {
   await page.locator('.checkmark').first().click();
   await page.locator('astro-checkbox:nth-child(5) > .checkbox-wrapper > .checkbox-container > .checkmark').click();
   await page.locator('.medication-reminder__button').click();
-  await expect(page.getByRole('heading', { name: 'Thank you for setting up yourdssd' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Thank you for setting up your' })).toBeVisible();
 });

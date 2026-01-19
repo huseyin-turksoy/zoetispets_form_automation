@@ -1,7 +1,9 @@
 import{test, expect} from '@playwright/test';
 
-test('newsletter_form', async ({ page }) => {
-  await page.goto('https://stage-zoetispets.cphostaccess.com/en-gb/blog/dog/how-often-do-dogs-go-to-vet/');
+const url = 'https://stage-zoetispets.cphostaccess.com/en-gb/blog/dog/how-often-do-dogs-go-to-vet/';
+
+test('newsletter_form '+ url, async ({ page }) => {
+  await page.goto(url);
   //await page.waitForLoadState('networkidle');
 
   for(let i=0; i<2; i++){

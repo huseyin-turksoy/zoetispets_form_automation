@@ -11,7 +11,7 @@ const config = {
     timeout: 7000
   },
   
-  reporter: 'html',
+  reporter: [['html'], ['json', { outputFile: 'test-results/report.json' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
 

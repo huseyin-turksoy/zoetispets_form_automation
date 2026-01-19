@@ -32,7 +32,7 @@ jobs:
 
       # 5. Run Playwright tests
       - name: Run Playwright tests
-        run: npx playwright test
+        run: npx playwright test --reporter=json
 
       # 6. Show report folder
       - name: Show playwright-report folder
@@ -49,7 +49,18 @@ jobs:
 
       
 
-      # 9. Send email if tests failed
+      # 9. Extract failed test names from JSON report
+      - name: Extract failed test names
+        if: failure()
+        id: failed_tests
+        run: |
+          if [ -f "blob-report/report.json" ]; then
+            FAILED_TESTS=$(jq -r '.suites[].suites[] | select(.status=="failed") | .title' blob-report/report.json | sort | uniq)
+            FAILED_TESTS_HTML=$(echo "$FAILED_TESTS" | sed 's/^/<li>/' | sed 's/$/<\/li>/')
+            echo "failed_tests_html=$FAILED_TESTS_HTML" >> $GITHUB_OUTPUT
+          fi
+
+      # 10. Send email if tests failed
       - name: Send email if tests failed
         if: failure()
         uses: dawidd6/action-send-mail@v3
@@ -58,11 +69,15 @@ jobs:
           server_port: ${{ secrets.SMTP_PORT }}
           username: ${{ secrets.SMTP_USERNAME }}
           password: ${{ secrets.SMTP_PASSWORD }}
-          subject: "🚨 Test Failure in Zoetis Pets"
+          subject: "🚨 Test Failure in Zoetis Pets Form Automation"
           to: huseyin.turksoy@nmqdigital.com;gamze.bektas@nmqdigital.com
           from: ${{ secrets.SMTP_USERNAME }}
           html_body: |
-            <h2>Some Playwright tests have failed</h2>
+            <h2>Some of the form tests have failed</h2>
             <p>Playwright tests failed — the full HTML report is published to GitHub Pages.</p>
+            <h3>Failed Tests:</h3>
+            <ul>
+            ${{ steps.failed_tests.outputs.failed_tests_html }}
+            </ul>
             <p>📑 <a href="https://huseyin-turksoy.github.io/zoetispets_form_automation/">View Full Report</a></p>
           

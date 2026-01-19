@@ -56,11 +56,11 @@ jobs:
         run: |
           REPORT_FILE=$(find test-results -name "*.json" -type f | head -1)
           if [ -n "$REPORT_FILE" ]; then
-            FAILED_TESTS=$(jq -r '.. | objects | select(.status=="failed") | .title' "$REPORT_FILE" | sort | uniq)
-            if [ -z "$FAILED_TESTS" ]; then
-              FAILED_TESTS=$(jq -r '.suites[]? | .. | objects | select(.status=="failed") | .title' "$REPORT_FILE" | sort | uniq)
+            FAILED_TESTS=$(jq -r '.suites[]?.suites[]? | select(.status=="failed") | .title' "$REPORT_FILE" | grep -v null | sort | uniq)
+            FAILED_TESTS_HTML=$(echo "$FAILED_TESTS" | grep -v '^$' | sed 's/^/<li>/' | sed 's/$/<\/li>/')
+            if [ -z "$FAILED_TESTS_HTML" ]; then
+              FAILED_TESTS_HTML="<li>Check full report for details</li>"
             fi
-            FAILED_TESTS_HTML=$(echo "$FAILED_TESTS" | sed 's/^/<li>/' | sed 's/$/<\/li>/')
             echo "failed_tests_html=$FAILED_TESTS_HTML" >> $GITHUB_OUTPUT
           else
             echo "failed_tests_html=<li>Could not find test report</li>" >> $GITHUB_OUTPUT

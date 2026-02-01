@@ -1,15 +1,15 @@
 import { test, expect } from '@playwright/test';
 
 const urls = [
-  'https://stage-zoetispets.cphostaccess.com/en-gb/cat-healthcare/arthritis-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/en-au/cat-healthcare/arthritis-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/en-ca/cat-healthcare/arthritis-quiz/',  
-  'https://stage-zoetispets.cphostaccess.com/de-de/katze-gesundheit/arthrose-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/es-es/gato-salud/artrosis-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/fr-fr/sante-du-chat/arthrose-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/it-it/salute-gatto/dolore-articolare-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/pl-pl/ochrona-zdrowia-kota/artretyzm-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/fr-ca/chat-soins/arthrose-quiz/'
+  'https://zoetispets.com/en-gb/cat-healthcare/arthritis-quiz/',
+  'https://zoetispets.com/en-au/cat-healthcare/arthritis-quiz/',
+  'https://zoetispets.com/en-ca/cat-healthcare/arthritis-quiz/',  
+  'https://zoetispets.com/de-de/katze-gesundheit/arthrose-quiz/',
+  'https://zoetispets.com/es-es/gato-salud/artrosis-quiz/',
+  'https://zoetisetcompagnie.com/fr-fr/sante-du-chat/arthrose-quiz/',
+  'https://zoetispets.com/it-it/salute-gatto/dolore-articolare-quiz/',
+  'https://zoetispets.com/pl-pl/ochrona-zdrowia-kota/artretyzm-quiz/',
+  'https://zoetispets.com/fr-ca/chat-soins/arthrose-quiz/'
 ];
 
 urls.forEach((url) => {

@@ -1,16 +1,16 @@
 import { test, expect } from '@playwright/test';
 
 const urls = [
-  'https://stage-zoetispets.cphostaccess.com/fr-ca/chien-soins/dermatologie-evaluation/',
-  'https://stage-zoetispets.cphostaccess.com/en-ca/dog-healthcare/skin-conditions-assessment/',
-  'https://stage-zoetispets.cphostaccess.com/en-au/dog-healthcare/skin-conditions-assessment/',  
-  'https://stage-zoetispets.cphostaccess.com/de-de/hund-gesundheit/juckreiz-test/',
-  'https://stage-zoetispets.cphostaccess.com/es-es/perro-salud/problemas-de-piel-evaluacion/',
-  'https://stage-zoetispets.cphostaccess.com/fr-fr/sante-du-chien/dermatologie-evaluation/',
-  'https://stage-zoetispets.cphostaccess.com/it-it/salute-cane/segni-di-problemi-cutanei-risultato/',
-  'https://stage-zoetispets.cphostaccess.com/pl-pl/ochrona-zdrowia-psa/choroby-skory-u-psa-ocena/',
-  'https://stage-zoetispets.cphostaccess.com/en-gb/dog-healthcare/skin-conditions-assessment/',
-  'https://stage-zoetispets.cphostaccess.com/pt-br/cuidados-caninos/avaliacao-de-condicoes-de-pele/'
+  'https://zoetispets.com/fr-ca/chien-soins/dermatologie-evaluation/',
+  'https://zoetispets.com/en-ca/dog-healthcare/skin-conditions-assessment/',
+  'https://zoetispets.com/en-au/dog-healthcare/skin-conditions-assessment/',  
+  'https://zoetispets.com/de-de/hund-gesundheit/juckreiz-test/',
+  'https://zoetispets.com/es-es/perro-salud/problemas-de-piel-evaluacion/',
+  'https://zoetisetcompagnie.com/fr-fr/sante-du-chien/dermatologie-evaluation/',
+  'https://zoetispets.com/it-it/salute-cane/segni-di-problemi-cutanei-risultato/',
+  'https://zoetispets.com/pl-pl/ochrona-zdrowia-psa/choroby-skory-u-psa-ocena/',
+  'https://zoetispets.com/en-gb/dog-healthcare/skin-conditions-assessment/',
+  'https://zoetispets.com/pt-br/cuidados-caninos/avaliacao-de-condicoes-de-pele/'
 ];
 
 urls.forEach((url) => {

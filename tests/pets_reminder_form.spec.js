@@ -1,6 +1,6 @@
 import{test, expect} from '@playwright/test';
 
-const url = 'https://stage-zoetispets.cphostaccess.com/en-gb/prescriptions/apoquel/';
+const url = 'https://zoetispets.com/en-gb/prescriptions/apoquel/';
 
 
 test('filling the pets reminder form '+ url, async ({ page }) => {

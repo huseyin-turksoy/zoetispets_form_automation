@@ -1,6 +1,6 @@
 import{test, expect} from '@playwright/test';
 
-const url = 'https://stage-zoetispets.cphostaccess.com/en-gb/blog/dog/how-often-do-dogs-go-to-vet/';
+const url = 'https://zoetispets.com/en-gb/blog/dog/how-often-do-dogs-go-to-vet/';
 
 test('newsletter_form '+ url, async ({ page }) => {
   await page.goto(url);

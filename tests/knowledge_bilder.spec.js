@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-const url = 'https://stage-zoetispets.cphostaccess.com/en-gb/dog-healthcare/arthritis/knowledge-builder/';
+const url = 'https://zoetispets.com/en-gb/dog-healthcare/arthritis/knowledge-builder/';
 
 test('knowledge_builder_form '+ url, async ({ page }) => {
   await page.goto(url);

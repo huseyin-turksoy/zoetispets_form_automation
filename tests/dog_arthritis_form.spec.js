@@ -1,16 +1,16 @@
 import { test, expect } from '@playwright/test';
 
 const urls = [
-  'https://stage-zoetispets.cphostaccess.com/en-gb/dog-healthcare/arthritis-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/en-au/dog-healthcare/arthritis-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/en-ca/dog-healthcare/arthritis-quiz/',  
-  'https://stage-zoetispets.cphostaccess.com/de-de/hund-gesundheit/arthrose-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/es-es/perro-salud/artrosis-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/fr-fr/sante-du-chien/arthrose-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/it-it/salute-cane/dolore-articolare-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/pl-pl/ochrona-zdrowia-psa/artretyzm-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/fr-ca/chien-soins/arthrose-quiz/',
-  'https://stage-zoetispets.cphostaccess.com/pt-br/saude-do-cao/avaliacao-de-osteoartrite/'
+  'https://zoetispets.com/en-gb/dog-healthcare/arthritis-quiz/',
+  'https://zoetispets.com/en-au/dog-healthcare/arthritis-quiz/',
+  'https://zoetispets.com/en-ca/dog-healthcare/arthritis-quiz/',  
+  'https://zoetispets.com/de-de/hund-gesundheit/arthrose-quiz/',
+  'https://zoetispets.com/es-es/perro-salud/artrosis-quiz/',
+  'https://zoetisetcompagnie.com/fr-fr/sante-du-chien/arthrose-quiz/',
+  'https://zoetispets.com/it-it/salute-cane/dolore-articolare-quiz/',
+  'https://zoetispets.com/pl-pl/ochrona-zdrowia-psa/artretyzm-quiz/',
+  'https://zoetispets.com/fr-ca/chien-soins/arthrose-quiz/',
+  'https://zoetispets.com/pt-br/saude-do-cao/avaliacao-de-osteoartrite/'
 ];
 
 urls.forEach((url) => {

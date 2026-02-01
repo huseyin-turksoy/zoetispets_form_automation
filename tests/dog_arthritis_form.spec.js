@@ -6,7 +6,7 @@ const urls = [
   'https://zoetispets.com/en-ca/dog-healthcare/arthritis-quiz/',  
   'https://zoetispets.com/de-de/hund-gesundheit/arthrose-quiz/',
   'https://zoetispets.com/es-es/perro-salud/artrosis-quiz/',
-  'https://zoetisetcompagnie.com/fr-fr/sante-du-chien/arthrose-quiz/',
+  'https://www.zoetisetcompagnie.com/fr-fr/sante-du-chien/arthrose-quiz/',
   'https://zoetispets.com/it-it/salute-cane/dolore-articolare-quiz/',
   'https://zoetispets.com/pl-pl/ochrona-zdrowia-psa/artretyzm-quiz/',
   'https://zoetispets.com/fr-ca/chien-soins/arthrose-quiz/',

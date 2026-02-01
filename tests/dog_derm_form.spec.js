@@ -6,11 +6,11 @@ const urls = [
   'https://zoetispets.com/en-au/dog-healthcare/skin-conditions-assessment/',  
   'https://zoetispets.com/de-de/hund-gesundheit/juckreiz-test/',
   'https://zoetispets.com/es-es/perro-salud/problemas-de-piel-evaluacion/',
-  'https://zoetisetcompagnie.com/fr-fr/sante-du-chien/dermatologie-evaluation/',
+  'https://www.zoetisetcompagnie.com/fr-fr/sante-du-chien/dermatologie-evaluation/',
   'https://zoetispets.com/it-it/salute-cane/segni-di-problemi-cutanei-risultato/',
   'https://zoetispets.com/pl-pl/ochrona-zdrowia-psa/choroby-skory-u-psa-ocena/',
   'https://zoetispets.com/en-gb/dog-healthcare/skin-conditions-assessment/',
-  'https://zoetispets.com/pt-br/cuidados-caninos/avaliacao-de-condicoes-de-pele/'
+  //'https://zoetispets.com/pt-br/cuidados-caninos/avaliacao-de-condicoes-de-pele/'
 ];
 
 urls.forEach((url) => {

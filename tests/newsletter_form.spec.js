@@ -52,6 +52,7 @@ test('newsletter_form '+ url, async ({ page }) => {
   await page.locator('div:nth-child(6) > .selector-group > .assessment-input-group-row > div > .selector-container > .checkmark').first().click();
   await page.locator('.checkbox-container > .checkmark').first().click();
   await page.locator('div:nth-child(8) > astro-checkbox > .checkbox-wrapper > .checkbox-container > .checkmark').click();
+  await page.getByRole('button', { name: 'Submit' }).waitFor();
   await page.getByRole('button', { name: 'Submit' }).click();
   await expect(page.getByRole('heading', { name: 'You’ve successfully joined' })).toBeVisible();
 

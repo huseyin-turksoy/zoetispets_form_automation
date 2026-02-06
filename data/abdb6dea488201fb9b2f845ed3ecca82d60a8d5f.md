@@ -1,0 +1,392 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Zoetis logo in orange." [ref=e5] [cursor=pointer]:
+        - /url: /en-gb/
+        - img "Zoetis logo in orange." [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic "Dog health" [ref=e11] [cursor=pointer]:
+            - strong [ref=e13]: Dog health
+            - img [ref=e14]
+          - generic "Cat health" [ref=e18] [cursor=pointer]:
+            - strong [ref=e20]: Cat health
+            - img [ref=e21]
+          - generic "Explore" [ref=e25] [cursor=pointer]:
+            - strong [ref=e27]: Explore
+            - img [ref=e28]
+          - generic "Prescriptions" [ref=e32] [cursor=pointer]:
+            - strong [ref=e34]: Prescriptions
+            - img [ref=e35]
+          - generic "About" [ref=e39] [cursor=pointer]:
+            - strong [ref=e41]: About
+            - img [ref=e42]
+        - generic [ref=e44]:
+          - button "Opens Select a country and language pop-up / Current United Kingdom English" [ref=e45] [cursor=pointer]:
+            - img "The United Kingdom flag icon." [ref=e46]
+            - img [ref=e47]
+          - button "Open search window" [ref=e49] [cursor=pointer]:
+            - img [ref=e50]
+    - main [ref=e52]:
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e58]:
+            - strong [ref=e60]: Dog Preventative Care
+            - heading "How often should I take my dog to the vet?" [level=1] [ref=e61]
+            - generic [ref=e62]:
+              - generic [ref=e63]:
+                - img [ref=e64]
+                - generic [ref=e66]: 20 min read
+              - generic:
+                - strong
+          - generic [ref=e67]:
+            - paragraph
+            - paragraph [ref=e68]: If you've got a sick dog, your first thought is to call your vet for advice. You'll probably need to take a trip to the practice for them to be seen, and it's greatly reassuring when they've had the once-over and the best care to aid their quick recovery.
+            - paragraph
+            - paragraph
+          - generic [ref=e69]:
+            - paragraph [ref=e70]:
+              - strong [ref=e71]: Article Summary
+            - list [ref=e72]:
+              - listitem "1/12" [ref=e73]:
+                - strong [ref=e74]: Annual vet visits
+                - text: are common, but the
+                - strong [ref=e75]: vaccine
+                - text: is just a
+                - strong [ref=e76]: tiny part
+                - text: of the check-up.
+              - listitem "2/12" [ref=e77]:
+                - text: These visits allow for a
+                - strong [ref=e78]: full nose-to-tail exam
+                - text: and time to
+                - strong [ref=e79]: discuss any worries
+                - text: .
+              - listitem "3/12" [ref=e80]:
+                - strong [ref=e81]: Prescription medications
+                - text: may require
+                - strong [ref=e82]: more frequent visits
+                - text: .
+              - listitem "4/12" [ref=e83]:
+                - text: A year is a long time if your dog
+                - strong [ref=e84]: doesn’t seem like their normal self
+                - text: .
+              - listitem "5/12" [ref=e85]:
+                - text: Signs can include
+                - strong [ref=e86]: increased drinking
+                - text: ","
+                - strong [ref=e87]: weight loss
+                - text: ","
+                - strong [ref=e88]: slowing down
+                - text: ","
+                - strong [ref=e89]: toileting changes
+                - text: ", or"
+                - strong [ref=e90]: pain or discomfort
+                - text: .
+              - listitem "6/12" [ref=e91]:
+                - strong [ref=e92]: 6-monthly checks
+                - text: are offered by some practices and can
+                - strong [ref=e93]: identify changes
+                - text: earlier.
+              - listitem "7/12" [ref=e94]:
+                - text: Vets check
+                - strong [ref=e95]: eyes
+                - text: ","
+                - strong [ref=e96]: ears
+                - text: ","
+                - strong [ref=e97]: teeth
+                - text: ","
+                - strong [ref=e98]: limbs
+                - text: ","
+                - strong [ref=e99]: weight
+                - text: ", and more."
+              - listitem "8/12" [ref=e100]:
+                - strong [ref=e101]: Early discovery
+                - text: of issues means
+                - strong [ref=e102]: a higher chance of successful treatment
+                - text: .
+              - listitem "9/12" [ref=e103]:
+                - text: Help reduce
+                - strong [ref=e104]: fearful behaviour
+                - text: with treats,
+                - strong [ref=e105]: familiar blankets
+                - text: ", or"
+                - strong [ref=e106]: nurse desensitisation visits
+                - text: .
+              - listitem "10/12" [ref=e107]:
+                - strong [ref=e108]: Nurses
+                - text: offer advice on topics like
+                - strong [ref=e109]: fireworks fears
+                - text: and
+                - strong [ref=e110]: obesity
+                - text: .
+              - listitem "11/12" [ref=e111]:
+                - strong [ref=e112]: Regular check-ups
+                - text: can lead to a
+                - strong [ref=e113]: longer
+                - text: ","
+                - strong [ref=e114]: healthier life
+                - text: .
+              - listitem "12/12" [ref=e115]:
+                - text: If you have any questions regarding your pet’s health,
+                - strong [ref=e116]: talk to your vet today
+                - text: .
+          - img "Golden retriever lying on grass with yellow flowers." [ref=e118]
+          - generic [ref=e119]:
+            - paragraph [ref=e120]: But how about when your pet is well? As a responsible owner, how can you best look after your dog? How often does a healthy dog need to be seen by the vets?
+            - paragraph [ref=e121]: The truth is, there are many reasons to take your pet to the vet, some of which might surprise you. So, how often is a routine vet check recommended for your dog?
+            - heading "Is an annual check-up for dogs enough?" [level=2] [ref=e122]
+            - paragraph [ref=e123]: Annual vet visits for vaccinations are common, but giving your dog the vaccine is just a tiny part of the consultation. This check-up is an opportunity for your vet to perform a full nose-to-tail physical exam, making sure your pet is healthy.
+            - paragraph [ref=e124]: These visits also allow you to discuss any worries that you might have about your pet. Perhaps your dog has a little wart on their nose, or they are getting an upset stomach when they eat certain foods? This is the perfect opportunity to talk to your vet and get tailored, reliable advice, or just to put your mind at rest.
+            - paragraph [ref=e125]: Other preventative treatments, such as worming and some flea medication, may also sometimes rely on annual checks, as your vet must be able to check that the medication is suitable for them.
+            - paragraph [ref=e126]: If your dog receives prescription medications, more frequent visits are generally required to make sure they are well-managed and happy.
+          - blockquote [ref=e129]: So, while for some dogs, an annual check-up may be enough, a year is a long time to wait if you believe they don’t seem like their normal selves.
+          - generic [ref=e130]:
+            - paragraph [ref=e131]:
+              - text: Signs that your pet needs to see a vet sooner may be subtle, but as their owner, you’re the best person to recognise them. These can range from increased drinking, changes to toileting habits, weight loss, slowing down or signs of pain or discomfort. In fact, any change in your
+              - link "dog’s behaviour" [ref=e132] [cursor=pointer]:
+                - /url: /en-gb/blog/dog/behaviour-changes-in-dogs/
+              - text: may indicate stress or pain as well as other issues such as hormonal conditions or neurological (brain) disease.
+            - paragraph [ref=e133]: "Common causes of discomfort include:"
+            - list [ref=e134]:
+              - listitem [ref=e135]:
+                - link "Arthritis (joint inflammation)" [ref=e136] [cursor=pointer]:
+                  - /url: /en-gb/dog-healthcare/arthritis/
+              - listitem [ref=e137]: Ear disease
+              - listitem [ref=e138]:
+                - link "Skin disease" [ref=e139] [cursor=pointer]:
+                  - /url: /en-gb/dog-healthcare/skin-conditions/
+              - listitem [ref=e140]: Dental disease
+              - listitem [ref=e141]: Digestive issues
+            - paragraph [ref=e142]: If you notice any changes in your dog (either physical or behavioural), even if they seem minor, this may indicate that your pet needs to see a vet. Try and take a video of your dog displaying these signs at home if you can, as it’s not unusual for dogs to act differently at the vet. Fortunately, even a phone camera video can really help your vet understand your concerns.
+            - heading "Would a 6-monthly check be better?" [level=2] [ref=e143]
+            - paragraph [ref=e144]: Many vet practices offer a 6-monthly health check as part of their healthcare scheme.
+          - blockquote [ref=e147]: Your pet's health status can change significantly in 6 months, especially if they are older.
+          - paragraph [ref=e149]: During your visit, your vet can also advise you on all canine matters, including dentistry, behaviour, mental well-being and preventative treatments and procedures.
+          - img "Cocker spaniel dog sitting on green grass." [ref=e152]
+          - generic [ref=e154]:
+            - paragraph [ref=e155]: If you have a growing dog, and if you’re a first-time dog owner, all the new information can feel overwhelming. The vet team can help you navigate the different developmental stages and respective needs, discuss nutrition, exercise, neutering and training. They may mention common breed-specific issues, how you can reduce the risk to your dog and what signs to look out for. Your vet team can also signpost you to other professionals and local dog groups – these are well-connected people in the canine world.
+            - heading "What does a vet check involve?" [level=2] [ref=e156]
+            - paragraph [ref=e157]:
+              - text: Firstly, your vet will ask you if you have any concerns about your dog. This is an excellent chance for you to ask questions, so make sure you write your concerns down so that you don’t forget.
+              - text: If your dog is nervous or requires a muzzle, let your vet know before the examination part of the appointment starts. Don't forget that many dogs are anxious at the vet surgery. While they may never intend to hurt a person, even the sweetest dog can snap if they are frightened or in pain.
+            - paragraph [ref=e158]: "Every vet carries out their examination differently, but standard health checks for dogs cover the same key areas:"
+            - paragraph [ref=e159]:
+              - text: "- General demeanour, posture, energy and behaviour"
+              - text: "- Face including eyes and ears, mouth and teeth"
+              - text: "- Skin, fur and lymph nodes"
+              - text: "- Mobility, spine, limbs and feet"
+              - text: "- Chest (including listening to heart and lungs with a stethoscope)"
+              - text: "- Abdominal palpation (gently feeling the internal organs through the skin)"
+              - text: "- Weight and fitness (body condition score)"
+              - text: "- Temperature check (if needed)"
+            - heading "Why are these visits important?" [level=2] [ref=e160]
+            - paragraph [ref=e161]:
+              - text: In a study of 100 older dogs given a routine health screen, an astonishing number had hidden health conditions that their owners were unaware of
+              - superscript [ref=e162]:
+                - link "See footnote 1" [ref=e163] [cursor=pointer]:
+                  - /url: "#footnote1"
+                  - text: "1"
+              - text: .
+          - blockquote [ref=e166]: Discovering an issue early, during a routine checkup, means there is a much higher chance of successful treatment.
+          - generic [ref=e167]:
+            - paragraph [ref=e168]: Your vet may discuss ways to keep your dog healthy, such as teeth brushing to help prevent future dental extractions and disease. Lumps that are worrying may be possible to sample during the consultation, and your vet may recommend other screening tests, such as blood or urine samples, which are essential to diagnose long-term conditions such as hypothyroidism or diabetes.
+            - heading "How can I make trips to the vet more positive?" [level=2] [ref=e169]
+            - paragraph [ref=e170]:
+              - text: Research shows that over 75% of dogs show fearful behaviour at the vet
+              - superscript [ref=e171]:
+                - link "See footnote 2" [ref=e172] [cursor=pointer]:
+                  - /url: "#footnote2"
+                  - text: "2"
+              - text: ", so you may be wondering if your dog could feel the same and how you can improve this experience for them."
+            - paragraph [ref=e173]: Future appointments will likely be far less stressful if your dog knows the practice and the staff. While you wait for the vet, it's the perfect time for the veterinary team to offer your dog something tasty and to fuss them. Take in your dog's favourite treats and toys, and make the visit fun. Use a blanket from home for your dog to sit on in the consultation room. Maybe even couple the vet visit with a walk somewhere they love afterwards.
+          - blockquote [ref=e176]: If your dog is particularly nervous about vet visits, your vet may offer desensitisation visits with a nurse.
+          - generic [ref=e177]:
+            - paragraph [ref=e178]:
+              - text: Or they might recommend you seek further help from a qualified clinical animal behaviourist
+              - superscript [ref=e179]:
+                - link "See footnote 3" [ref=e180] [cursor=pointer]:
+                  - /url: "#footnote3"
+                  - text: "3"
+              - text: .
+            - paragraph [ref=e181]: As you can see, there’s plenty you can do to help your dog feel more relaxed at the vets, so don’t hesitate to reach out to your local vet practice for help if you’re not sure how to proceed.
+            - heading "Other benefits of regular health checks for dogs" [level=2] [ref=e182]
+            - paragraph [ref=e183]: If you and your dog build a trusting relationship with your vet, it will be a huge help as your dog gets older or if they become unwell. Not only will your dog be more accepting of your vet's help, but they may even come to like visiting the practice. This is often true of those that have frequently visited as young, healthy dogs, or attended puppy classes with the practice nurses.
+            - paragraph [ref=e184]: Don't forget, the nursing team can be a fantastic source of advice on all matters, from fireworks fears to obesity. Nurses can be incredibly supportive through difficult times too, such as caring for senior pets. They can also flag to a vet if a significant issue needs further treatment or investigation.
+            - heading "So, how often does MY dog need to go to the vets?" [level=2] [ref=e185]
+            - paragraph [ref=e186]: If you put in the groundwork early, regular check-ups mean that some illnesses can be caught early or avoided entirely. This may lead to your dog leading a longer, happier and healthier life. And in those circumstances where your pet is ill or rushed to the vet in an emergency, the experience will be far less stressful for everyone. After all, your vet team probably have dogs of their own. They understand how worrying a trip to the vet can be and how important your dog is to you.
+            - paragraph [ref=e187]: Do you know when your dog’s next check-up is? If you haven’t booked it yet or if you have any questions regarding your pet’s health, talk to your vets today.
+          - article [ref=e189]:
+            - generic [ref=e190]:
+              - heading "References" [level=5] [ref=e191]
+              - link "See Reference 1" [ref=e192] [cursor=pointer]:
+                - /url: "#ref1"
+                - text: "1."
+              - text: "Willems, A., Paepe, D., Marynissen, S., Smets, P., Van de Maele, I., Picavet, P., Duchateau, L., Daminet, S.: (2017). „Results of Screening of Apparently Healthy Senior and Geriatric Dogs.“, Journal of Veterinary Internal Medicine 31(1), 81-92."
+              - link "See Reference 2" [ref=e193] [cursor=pointer]:
+                - /url: "#ref2"
+                - text: "2."
+              - text: "Riemer, S., Heritier, C., Windschnurer, I., Pratsch, L., Arhant, C., Affenzeller, N.: (2021). &bdquo;A Review on Mitigating Fear and Aggression in Dogs and Cats in a Veterinary Setting.&ldquo;, Animals 11(1), 158"
+              - link "See Reference 3" [ref=e194] [cursor=pointer]:
+                - /url: "#ref3"
+                - text: "3."
+              - link "Fellowship of Animal Behavior Clinicians" [ref=e195] [cursor=pointer]:
+                - /url: https://fabclinicians.org/
+          - generic [ref=e197]:
+            - heading "Explore more on these topics" [level=5] [ref=e198]
+            - generic [ref=e199]:
+              - link "Vet Visits" [ref=e200] [cursor=pointer]:
+                - /url: /en-gb/search/?custom_ss_categories=Vet Visits
+              - link "Preventative Care" [ref=e201] [cursor=pointer]:
+                - /url: /en-gb/search/?custom_ss_categories=Preventative Care
+              - link "Dog Health" [ref=e202] [cursor=pointer]:
+                - /url: /en-gb/search/?custom_ss_categories=Health&custom_ss_species=Dog
+        - generic [ref=e205]:
+          - img "Close-up of a black dog with attentive eyes and upright ears." [ref=e207]
+          - generic [ref=e210]:
+            - paragraph [ref=e211]:
+              - strong [ref=e212]: Dog Arthritis Online Assessment
+            - heading "Is arthritis pain affecting your dog’s quality of life?" [level=2] [ref=e213]
+            - paragraph
+            - paragraph [ref=e214]: It's natural to feel concerned if you notice a change in your dog's behaviour. There could be a number of causes, but if they seem slower, more withdrawn or less playful, then it could be arthritis pain.
+            - link "Check my dog" [ref=e215] [cursor=pointer]:
+              - /url: /en-gb/dog-healthcare/arthritis-quiz/
+              - text: Check my dog
+              - generic [ref=e216]:
+                - img [ref=e217]
+                - img [ref=e219]
+        - generic [ref=e223]:
+          - strong [ref=e225]: Related content
+          - list [ref=e227]:
+            - listitem [ref=e228]:
+              - article [ref=e229]:
+                - link [ref=e230] [cursor=pointer]:
+                  - /url: /en-gb/blog/dog/types-of-ticks-uk/
+                - link "Dog health and care Dog Parasites Common types of ticks in the UK Ticks in the UK pose a very real threat to the health and welfare of your dog’s life. It is now estimated that a third of UK dogs can have a tick on them, the disease-spreading arachnids that feed on your furry friend’s blood and pass on infections as they do." [ref=e232] [cursor=pointer]:
+                  - /url: /en-gb/blog/dog/types-of-ticks-uk/
+                  - img "Dog health and care" [ref=e234]
+                  - strong [ref=e236]: Dog Parasites
+                  - heading "Common types of ticks in the UK" [level=2] [ref=e237]
+                  - paragraph [ref=e239]: Ticks in the UK pose a very real threat to the health and welfare of your dog’s life. It is now estimated that a third of UK dogs can have a tick on them, the disease-spreading arachnids that feed on your furry friend’s blood and pass on infections as they do.
+            - listitem [ref=e240]:
+              - article [ref=e241]:
+                - link [ref=e242] [cursor=pointer]:
+                  - /url: /en-gb/blog/dog/dog-first-aid-course/
+                - link "Dog health and care Dog Preventative Care Everything you need to know about dog first aid courses Many of us have attended first aid training at school or at work; but not many of us will have attended dog first aid courses. Dogs live in homes under our protection; knowing dog first aid could be a life-saver one day." [ref=e244] [cursor=pointer]:
+                  - /url: /en-gb/blog/dog/dog-first-aid-course/
+                  - img "Dog health and care" [ref=e246]
+                  - strong [ref=e248]: Dog Preventative Care
+                  - heading "Everything you need to know about dog first aid courses" [level=2] [ref=e249]
+                  - paragraph [ref=e251]: Many of us have attended first aid training at school or at work; but not many of us will have attended dog first aid courses. Dogs live in homes under our protection; knowing dog first aid could be a life-saver one day.
+            - listitem [ref=e252]:
+              - article [ref=e253]:
+                - link [ref=e254] [cursor=pointer]:
+                  - /url: /en-gb/blog/dog/causes-itchy-dog/
+                - link "Dog health and care Dog Skin Conditions Why is my dog itching so much? Persistent itching is uncomfortable for pets and concerning for you, too. Unfortunately, it’s a common problem, and if you are reading this, we know you want to find out how to help your dog through this." [ref=e256] [cursor=pointer]:
+                  - /url: /en-gb/blog/dog/causes-itchy-dog/
+                  - img "Dog health and care" [ref=e258]
+                  - strong [ref=e260]: Dog Skin Conditions
+                  - heading "Why is my dog itching so much?" [level=2] [ref=e261]
+                  - paragraph [ref=e263]: Persistent itching is uncomfortable for pets and concerning for you, too. Unfortunately, it’s a common problem, and if you are reading this, we know you want to find out how to help your dog through this.
+        - dialog [ref=e264]:
+          - generic [ref=e265]:
+            - img [ref=e267] [cursor=pointer]
+            - generic [ref=e269]:
+              - heading "Newsletter" [level=3] [ref=e270]
+              - paragraph [ref=e271]: Join over 500,000 pet owners who receive vet-approved health tips for their dog, delivered straight to their inbox. Be the first to hear about new expert blogs, interactive quizzes, and educational tools, designed to help you better understand your dog’s health.
+            - generic [ref=e272]:
+              - generic [ref=e276]:
+                - generic [ref=e278]:
+                  - generic [ref=e279]: Your email?*
+                  - textbox "Your email" [ref=e285]: newsletter.test@yopmail.com
+                - generic [ref=e287]:
+                  - generic [ref=e288]: Dog Name *
+                  - generic [ref=e289]:
+                    - textbox "Dog Name *" [ref=e290]:
+                      - /placeholder: Dog name
+                      - text: test dog
+                    - generic: What is your dog's name?
+                - generic [ref=e292]:
+                  - generic [ref=e293]: And what's your dog's breed?
+                  - generic [ref=e295] [cursor=pointer]:
+                    - textbox "And what's your dog's breed? Dog Breed *" [ref=e297]:
+                      - /placeholder: Type here
+                      - text: Other
+                    - img [ref=e299]
+                - generic [ref=e302]:
+                  - generic [ref=e303]:
+                    - generic [ref=e304]: And age?*
+                    - slider "And age?*" [ref=e305]: "0"
+                    - generic [ref=e306] [cursor=pointer]: "0"
+                  - list [ref=e307]:
+                    - listitem [ref=e308] [cursor=pointer]: <1
+                    - listitem [ref=e309] [cursor=pointer]: "4"
+                    - listitem [ref=e310] [cursor=pointer]: "8"
+                    - listitem [ref=e311] [cursor=pointer]: "12"
+                    - listitem [ref=e312] [cursor=pointer]: ">16"
+                - generic [ref=e314]:
+                  - generic [ref=e315]: Are you familiar with the common signs of arthritis in dogs?
+                  - generic [ref=e316]:
+                    - generic [ref=e318] [cursor=pointer]:
+                      - radio "Yes" [checked]
+                      - generic [ref=e320]: "Yes"
+                    - generic [ref=e322] [cursor=pointer]:
+                      - radio "No"
+                      - generic [ref=e324]: "No"
+                - generic [ref=e326]:
+                  - generic [ref=e327]: Have you ever given your dog supplements for arthritis?
+                  - generic [ref=e328]:
+                    - generic [ref=e330] [cursor=pointer]:
+                      - radio "Yes" [checked]
+                      - generic [ref=e332]: "Yes"
+                    - generic [ref=e334] [cursor=pointer]:
+                      - radio "No"
+                      - generic [ref=e336]: "No"
+                - generic [ref=e340] [cursor=pointer]:
+                  - checkbox [checked]
+                  - generic [ref=e343]:
+                    - text: I consent to providing my name and contact information to Zoetis Belgium SA (Irish branch) for the purpose of receiving email marketing communications (such as updates on animal health, news, articles, pet care advice). I understand that Zoetis will process my personal data in accordance with
+                    - generic [ref=e344]: Zoetis' Privacy Statement
+                    - text: ", and that I may unsubscribe at any time by clicking the \"unsubscribe\" link at the bottom of the newsletter, email or as described in the Zoetis' Privacy Statement.*"
+                - generic [ref=e348] [cursor=pointer]:
+                  - checkbox "I agree with the Zoetis Terms of Use . I may unsubscribe at any time by clicking the 'unsubscribe' link at the bottom of the newsletter, email or as described in the Zoetis' Privacy Statement.* I agree with the Zoetis Terms of Use . I may unsubscribe at any time by clicking the 'unsubscribe' link at the bottom of the reminder email or as described in the Zoetis' Privacy Statement.*" [checked]
+                  - generic [ref=e351]:
+                    - text: I agree with the Zoetis
+                    - generic [ref=e352]: Terms of Use
+                    - text: . I may unsubscribe at any time by clicking the 'unsubscribe' link at the bottom of the newsletter, email or as described in the Zoetis' Privacy Statement.*
+                - button "Submit" [active] [ref=e354] [cursor=pointer]:
+                  - text: Submit
+                  - generic [ref=e355]:
+                    - img [ref=e356]
+                    - img [ref=e358]
+              - generic [ref=e360]: MM-45486A
+    - generic [ref=e362]:
+      - generic:
+        - img "Zoetis logo in white."
+      - generic [ref=e363]:
+        - generic [ref=e365]: Zoetis discovers, develops, manufactures and commercialises a diverse portfolio of animal health medicines and vaccines designed to meet the real-world needs of veterinarians and the livestock farmers and pet owners they support.
+        - list [ref=e366]:
+          - listitem [ref=e367]:
+            - link "Zoetis Corporate Website" [ref=e368] [cursor=pointer]:
+              - /url: https://www2.zoetis.co.uk/
+          - listitem [ref=e369]:
+            - link "Privacy Policy" [ref=e370] [cursor=pointer]:
+              - /url: /en-gb/privacy-policy/
+          - listitem [ref=e371]:
+            - link "Terms of Use" [ref=e372] [cursor=pointer]:
+              - /url: /en-gb/terms-of-use/
+          - listitem [ref=e373]:
+            - link "Cookies Settings" [ref=e374] [cursor=pointer]:
+              - /url: javascript:void(0)
+      - generic [ref=e377]:
+        - generic [ref=e378]: © Copyright 2026. All trademarks are the property of Zoetis Inc., its affiliates and/or its licensors. All other trademarks are the property of their respective owners.
+        - generic [ref=e379]: MM-31694
+    - text: ×
+  - button "Give Feedback" [ref=e380] [cursor=pointer]:
+    - generic [ref=e381]:
+      - img [ref=e384]
+      - generic [ref=e389]: Give Feedback
+  - dialog [ref=e390]
+```

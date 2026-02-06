@@ -23,8 +23,10 @@ urls.forEach((url) => {
   for(let i=0; i<2; i++){
 
     if (await page.locator('button[id="onetrust-accept-btn-handler"]').isVisible()) {
-  await page.locator('button[id="onetrust-accept-btn-handler"]').click();
+  await page.locator('button[id="onetrust-accept-btn-handler"]').first().click();
   break;
+  }else if (await page.locator('.onetrust-close-btn-handler').first().isVisible()) {
+    await page.locator('.onetrust-close-btn-handler').first().click();    
   }else{
     await page.waitForTimeout(3000);
   }

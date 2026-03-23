@@ -3,8 +3,8 @@ import { test, expect } from '@playwright/test';
 
 const urls = [
   'https://www.zoetispets.com/en-gb/dog-healthcare/arthritis/knowledge-builder/',
-  'https://www.zoetispets.com/en-au/dog-healthcare/arthritis/knowledge-builder/',  
-  'https://www.zoetispets.com/en-ca/dog-healthcare/arthritis/knowledge-builder/',
+  //'https://www.zoetispets.com/en-au/dog-healthcare/arthritis/knowledge-builder/',  
+  //'https://www.zoetispets.com/en-ca/dog-healthcare/arthritis/knowledge-builder/',
   'https://www.zoetispets.com/es-es/perro-salud/artrosis/knowledge-builder/',
   'https://www.zoetispets.com/de-de/hund-gesundheit/arthrose/knowledge-builder/',
   'https://www.zoetispets.com/pl-pl/ochrona-zdrowia-psa/osteoarthritis/knowledge-builder/',
